@@ -428,12 +428,12 @@ Prefab:
     - target: {fileID: 114061722404776852, guid: 02dbd2dac67b859459ba82ddfb6dfcf6,
         type: 2}
       propertyPath: jump.power.delta
-      value: 12
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114061722404776852, guid: 02dbd2dac67b859459ba82ddfb6dfcf6,
         type: 2}
       propertyPath: movement.speed.walk.gravity
-      value: 100
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 114061722404776852, guid: 02dbd2dac67b859459ba82ddfb6dfcf6,
         type: 2}
@@ -463,7 +463,7 @@ Prefab:
     - target: {fileID: 114061722404776852, guid: 02dbd2dac67b859459ba82ddfb6dfcf6,
         type: 2}
       propertyPath: jump.pushDownMultiplier
-      value: 2.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114061722404776852, guid: 02dbd2dac67b859459ba82ddfb6dfcf6,
         type: 2}
@@ -478,12 +478,58 @@ Prefab:
     - target: {fileID: 114061722404776852, guid: 02dbd2dac67b859459ba82ddfb6dfcf6,
         type: 2}
       propertyPath: movement.speed.strafe.gravity
-      value: 1
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 114061722404776852, guid: 02dbd2dac67b859459ba82ddfb6dfcf6,
         type: 2}
       propertyPath: movement.gravityMultiplier
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114061722404776852, guid: 02dbd2dac67b859459ba82ddfb6dfcf6,
+        type: 2}
+      propertyPath: constraints.lean
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114061722404776852, guid: 02dbd2dac67b859459ba82ddfb6dfcf6,
+        type: 2}
+      propertyPath: constraints.prone
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114061722404776852, guid: 02dbd2dac67b859459ba82ddfb6dfcf6,
+        type: 2}
+      propertyPath: constraints.crouch
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114061722404776852, guid: 02dbd2dac67b859459ba82ddfb6dfcf6,
+        type: 2}
+      propertyPath: states.walk.stepTime
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114061722404776852, guid: 02dbd2dac67b859459ba82ddfb6dfcf6,
+        type: 2}
+      propertyPath: states.walk.headbob
+      value: 
+      objectReference: {fileID: 11400000, guid: a7a2dfcb6efe77849b6e3d15a7010400,
+        type: 2}
+    - target: {fileID: 114061722404776852, guid: 02dbd2dac67b859459ba82ddfb6dfcf6,
+        type: 2}
+      propertyPath: slide.power.angle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114061722404776852, guid: 02dbd2dac67b859459ba82ddfb6dfcf6,
+        type: 2}
+      propertyPath: slide.updateDirection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114061722404776852, guid: 02dbd2dac67b859459ba82ddfb6dfcf6,
+        type: 2}
+      propertyPath: movement.speed.strafe.snap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114061722404776852, guid: 02dbd2dac67b859459ba82ddfb6dfcf6,
+        type: 2}
+      propertyPath: movement.speed.strafe.delta
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 02dbd2dac67b859459ba82ddfb6dfcf6, type: 2}
@@ -664,7 +710,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-26296
+  m_Name: pb_Mesh14818
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -1614,7 +1660,7 @@ Transform:
   m_GameObject: {fileID: 1531566370}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -12.7, y: 0, z: -21.45}
-  m_LocalScale: {x: 3.7123744, y: 1, z: 4.96254}
+  m_LocalScale: {x: 21.457088, y: 1, z: 42.624832}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
