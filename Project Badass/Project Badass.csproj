@@ -261,6 +261,21 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/chanc_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
+    <Reference Include="ProBuilderCore-Unity5">
+      <HintPath>Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
+    </Reference>
+    <Reference Include="pb_Stl">
+      <HintPath>Assets/ProCore/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
+    </Reference>
+    <Reference Include="Poly2Tri">
+      <HintPath>Assets/ProCore/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
+    </Reference>
+    <Reference Include="ProBuilderMeshOps-Unity5">
+      <HintPath>Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
+    </Reference>
+    <Reference Include="KdTreeLib">
+      <HintPath>Assets/ProCore/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2018.1.6f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\mscorlib.dll</HintPath>
     </Reference>
@@ -300,9 +315,177 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Moe Baker\Advanced Rigidbody FirstPerson Controller\Extra\Scripts\InputLabel.cs" />
+    <Compile Include="Assets\Moe Baker\Advanced Rigidbody FirstPerson Controller\Extra\Scripts\Teleporter.cs" />
+    <Compile Include="Assets\Moe Baker\Advanced Rigidbody FirstPerson Controller\Scripts\Controller\FPController.cs" />
+    <Compile Include="Assets\Moe Baker\Advanced Rigidbody FirstPerson Controller\Scripts\Controller\Input\FPControllerInputModulator.cs" />
+    <Compile Include="Assets\Moe Baker\Advanced Rigidbody FirstPerson Controller\Scripts\Controller\Input\FPControllerInputModule.cs" />
+    <Compile Include="Assets\Moe Baker\Advanced Rigidbody FirstPerson Controller\Scripts\Controller\Input\FPControllerKeyInput.cs" />
+    <Compile Include="Assets\Moe Baker\Advanced Rigidbody FirstPerson Controller\Scripts\ControllerStatesDataTemplate.cs" />
+    <Compile Include="Assets\Moe Baker\Advanced Rigidbody FirstPerson Controller\Scripts\HeadBob\ControllerHeadBobStates.cs" />
+    <Compile Include="Assets\Moe Baker\Advanced Rigidbody FirstPerson Controller\Scripts\HeadBob\HeadBobData.cs" />
+    <Compile Include="Assets\Moe Baker\Advanced Rigidbody FirstPerson Controller\Scripts\Sound\ControllerSoundStates.cs" />
+    <Compile Include="Assets\Moe Baker\Advanced Rigidbody FirstPerson Controller\Scripts\Sound\Sound Surface\SoundSurface.cs" />
+    <Compile Include="Assets\Moe Baker\Advanced Rigidbody FirstPerson Controller\Scripts\Sound\Sound Surface\TerrainSoundSurface.cs" />
+    <Compile Include="Assets\Moe Baker\Advanced Rigidbody FirstPerson Controller\Scripts\TypesData.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Tools\EditorTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Tools\InspectorTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\AdvancedAssetPostprocessorToolkit.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\AssetExporter.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Drawers\BoundsCalculator Drawer.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Drawers\CollisionIgnoreController Drawer.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Drawers\GameScene Drawer.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Drawers\InputModulator Drawer.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Drawers\KeyCodeList Drawer.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Drawers\MultiTag Drawer.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Drawers\OptionsBox Drawer.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Drawers\PathDrawer.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Drawers\SoundSet Drawer.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Drawers\TabButton Drawer.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Drawers\TabMenu Drawer.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Drawers\ValueEvent Drawer.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Editor Window\MoePackageExporter.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Editor Window\QuickTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Editor Window\SetSelectableColor.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Inspector\CreateScriptableObjectButton.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Inspector\CustomGUI.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Inspector\EnumDrawer.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Inspector\GUIArea.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Inspector\InspectorBase.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Inspector\InspectorBaseCustomDrawer.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Inspector\InspectorList.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Inspector\LayoutPropertyCustomDrawer.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Inspector\LayoutPropertyDrawer.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\Inspector\ListPopup.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\LightProbeRegion.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\MultiPrefab.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\_Editor\Utility\ShowDirection.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\MoeTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Tools\ConstantsTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Tools\ConvertionTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Tools\DictionaryTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Tools\EnumTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Tools\GameObjectTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Tools\InputTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Tools\ListTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Tools\MathTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Tools\PlatformTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Tools\RandomTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Tools\ReflectionTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Tools\SceneTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Tools\SerializationTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Tools\StringTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Tools\TransformTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Tools\VectorTools.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Animator\AnimatorEventRewind.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Animator\StateMachineCallbackRewind.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Animator\UStateMachine.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\BasicCursor.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Booling\Auto Bool\AutoBoolBehaviour.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Booling\Auto Bool\AutoBoolController.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Booling\Auto Bool\AutoBoolItem.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Booling\BoolController.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Booling\BoolItem.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Booling\IBoolItem.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\AutoResource.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\Coordinates.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\GameScene.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\ListEnumerator.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\ListIndexer.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\ModuleFramework.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\Numerical\DualInt.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\Numerical\IRange.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\Numerical\MaxValue.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\Numerical\SmoothValues.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\Numerical\ValueRange.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\PlayerPrefsX.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\Scriptable Objects\ScriptableObjectSingelton.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\Scriptable Objects\SoundSet.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\ScriptableResourceObject.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\UT Serializable\Base\SerializableUCType.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\UT Serializable\Color\SCColor.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\UT Serializable\Color\SSColor.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\UT Serializable\Quaternion\SCQuaternion.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\UT Serializable\Quaternion\SSQuaternion.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\UT Serializable\Resolution\SCResolution.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\UT Serializable\Resolution\SSResolution.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\UT Serializable\Vector2\SCVector2.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\UT Serializable\Vector2\SSVector2.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\UT Serializable\Vector3\SCVector3.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\UT Serializable\Vector3\SSVector3.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\UT Serializable\Vector4\SCVector4.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Data\UT Serializable\Vector4\SSVector4.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Input\Input Modulator\InputModulator.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Input\Input Modulator\InputModule.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Input\KeyCodeList.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\MultiTag.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Physics\BoundsCheckArea.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Physics\CenterOfMass.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Physics\CollisionIgnoreController.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Physics\CollisionReWind.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Physics\DestroyZone.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Physics\Explosion.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Physics\PhysicsCheckController.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Physics\TriggerReWind.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Processing\AutoCoroutine.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Processing\BoundsCalculator.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Processing\DestroyAfter.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Processing\Dispatcher System\UnityDispatcher.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Trash\GameTrash.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Trash\TrashItem.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\Trash\TrashList.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\Input Field Slider\FloatInputFieldSlider.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\Input Field Slider\InputFieldSlider.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\Input Field Slider\IntInputFieldSlider.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\Layout Seperator\LayoutSeperator.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\Layout Seperator\LayoutSeperatorElement.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\LoadSceneButton.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\Options Box\OptionsBox.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\Options Box\OptionsBoxArrow.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\ScrollRectSelector.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\Tab Menu\TabButton.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\Tab Menu\TabMenu.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\TransparencyController.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\UI Creator\TemplateListUICreator.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\UI Creator\TemplateUICreator.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\UI Creator\UI Template\AutoCallbackUITemplate.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\UI Creator\UI Template\UITemplate.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\UI Creator\UICreator.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\UI\URLButton.cs" />
+    <Compile Include="Assets\Moe Baker\Moe Tools\Standalone\Utility\ValueEvent.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\CameraControls.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\IcoBumpin.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Misc\HueCube.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Procedural Mesh\ExtrudeRandomEdges.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Vertex Colors\HighlightNearestFace.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Moe Baker\Advanced Rigidbody FirstPerson Controller\README.txt" />
+    <None Include="Assets\Moe Baker\Moe Tools\Info.txt" />
+    <None Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\README.txt" />
+    <None Include="Assets\ProCore\ProBuilder\About\Font\SIL Open Font License.txt" />
+    <None Include="Assets\ProCore\ProBuilder\About\ThirdPartyLicenses.txt" />
+    <None Include="Assets\ProCore\ProBuilder\About\changelog.txt" />
+    <None Include="Assets\ProCore\ProBuilder\About\pc_AboutEntry_ProBuilder.txt" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\DiffuseTextureBlend.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\DiffuseVertexColor.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_FaceHighlight.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_FacePicker.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_HideVertices.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_NormalPreview.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_ReferenceUnlit.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_ScrollHighlight.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_SelectionPicker.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_SmoothingPreview.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_StandardVertexColor.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_TransparentOverlay.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_UnlitSolidColor.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_UnlitVertexColor.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_VertexPicker.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_VertexShader.shader" />
+    <None Include="Assets\ProCore\ProBuilder\readme.txt" />
     <None Include="C:\Users\chanc_000\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />
     <None Include="C:\Users\chanc_000\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Light.uss" />
     <None Include="C:\Users\chanc_000\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\Alert.uxml" />
